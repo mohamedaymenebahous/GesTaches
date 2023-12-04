@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import {RouterModule, Routes} from "@angular/router";
 import {BrowserModule} from "@angular/platform-browser";
 import {LandingPageComponent} from "./components/landing-page-module/landing-page/landing-page.component";
-import {TodoListComponent} from "./components/landing-page-module/todo-list/todo-list.component";
 import {MatTableModule} from "@angular/material/table";
 
 const appRoutes: Routes = [
@@ -15,7 +14,6 @@ const appRoutes: Routes = [
 
 @NgModule({
   declarations: [
-    TodoListComponent
   ],
   imports: [
     BrowserModule,
@@ -29,8 +27,7 @@ const appRoutes: Routes = [
     MatTableModule
   ],
   exports: [
-    RouterModule,
-    TodoListComponent
+    RouterModule
   ]
 })
 export class AppRoutingModule {
